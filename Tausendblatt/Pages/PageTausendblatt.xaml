@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Tausendblatt.PageTausendblatt">
+	<Grid x:Name="pageGridMain" ColumnSpacing="0" RowSpacing="0">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="2*" />
+			<RowDefinition Height="1" />
+			<RowDefinition Height="*" />
+			<RowDefinition Height="*" />
+			<RowDefinition Height="*" />
+		</Grid.RowDefinitions>
+		<Image Grid.Row="0" Grid.RowSpan="4" x:Name="imageLogoBackground" IsVisible="false" />
+		<AbsoluteLayout Grid.Row="0" Grid.RowSpan="3" x:Name="absoluteLayoutImages" />
+		<StackLayout Grid.Row="3" Grid.RowSpan="2" x:Name="stackLayoutInfo" Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+		</StackLayout>
+		<BoxView Grid.Row="1" BackgroundColor="Gray" x:Name="boxViewSplit" HeightRequest="1" />
+		<BoxView Grid.Row="2" Grid.RowSpan="3" BackgroundColor="White" x:Name="boxViewInfo" />
+		<WebView Grid.Row="2" Grid.RowSpan="3" BackgroundColor="White" x:Name="webViewInfo" />
+		<BoxView Grid.Row="0" Grid.RowSpan="5" BackgroundColor="White" x:Name="boxViewCanvas" />
+	</Grid>
+</ContentPage>
