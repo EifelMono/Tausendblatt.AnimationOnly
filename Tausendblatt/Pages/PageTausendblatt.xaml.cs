@@ -287,7 +287,6 @@ namespace Tausendblatt
                 await Task.Delay((int)animationHalf);
 
                 await webViewInfo.FadeTo(0, 0);
-                WebViewIsVisible = true;
                 webViewInfo.Source = new HtmlWebViewSource
                 {
                     Html = "<h1>Ferienhaus Tausendblatt</h1></br>Logo animation for the Tausendblatt app</br></br>Code and description on <a href=\"https://github.com/EifelMono/Tausendblatt\">github</a>"
@@ -300,7 +299,7 @@ namespace Tausendblatt
                         Task.Delay((int)animationHalf),
                         webViewInfo.FadeTo(1, animationDouble)
                     });
-
+                WebViewIsVisible = true;
 
                 AnimationLoop();
              
