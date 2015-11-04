@@ -5,6 +5,8 @@ Only tested with iOS because I have no Android license.
 
 ## With images and Xamarin.Forms animations you can make a film.
 
+A video of the animation can be found here https://github.com/EifelMono/Tausendblatt/blob/master/Video/AnimationLogo.mp4
+
 The [ViewExtensions] (https://developer.xamarin.com/api/type/Xamarin.Forms.ViewExtensions) class is the basic for that
 
 * FadeTo</br>
@@ -18,4 +20,3 @@ The [ViewExtensions] (https://developer.xamarin.com/api/type/Xamarin.Forms.ViewE
 
 
 [LogoMD]: https://raw.githubusercontent.com/EifelMono/Tausendblatt/master/iOS/Resources/Images.xcassets/AppIcons.appiconset/LogoWhite.50x50.png
-
