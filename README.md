@@ -17,5 +17,5 @@ The [ViewExtensions] (https://developer.xamarin.com/api/type/Xamarin.Forms.ViewE
 [Easings](https://developer.xamarin.com/api/type/Xamarin.Forms.Easing/) helps you to give the animation a better look.
 
 
-[LogoMD]: https://raw.githubusercontent.com/EifelMono/Tausendblatt/master/iOS/Resources/Images.xcassets/AppIcons.appiconset/LogoWhite.29x29.png
+[LogoMD]: https://raw.githubusercontent.com/EifelMono/Tausendblatt/master/iOS/Resources/Images.xcassets/AppIcons.appiconset/LogoWhite.50x50.png
 
