@@ -234,14 +234,14 @@ namespace Tausendblatt
 
                 await Task.WhenAny(new Task[]
                     {
-                        DetailImages[LogoDetail.House7].LayoutTo(ImageDetailBounds, animationHalf, Easing.BounceOut),
-                        Task.Delay((int)animationHalf),
+                        DetailImages[LogoDetail.House7].LayoutTo(ImageDetailBounds, animation, Easing.BounceOut),
+                        Task.Delay((int)animation / 4),
                     });
 
                 DetailLabels[LogoDetail.Header].Text = "2015";
                 DetailLabels[LogoDetail.House].Text = "Tausendblatt 7 und 5";
 
-                await DetailImages[LogoDetail.House5].LayoutTo(ImageDetailBounds, animationHalf, Easing.BounceOut);
+                await DetailImages[LogoDetail.House5].LayoutTo(ImageDetailBounds, animation, Easing.BounceOut);
 
                 await Task.WhenAny(new Task[]
                     {
@@ -250,9 +250,9 @@ namespace Tausendblatt
                         DetailImages[LogoDetail.House5].FadeTo(0, animation),
                         DetailImages[LogoDetail.House5].LayoutTo(new Rectangle(ImageDetailBounds.X - 10, ImageDetailBounds.Y, ImageDetailBounds.Width, ImageDetailBounds.Height), animationDouble),
                         DetailImages[LogoDetail.House].FadeTo(1, animation),
-                        Task.Delay((int)animationHalf),
+                        Task.Delay((int)animationHalf / 2),
                     });
-                await DetailImages[LogoDetail.Sun].FadeTo(1, animation);
+                await DetailImages[LogoDetail.Sun].FadeTo(1, animation, Easing.SinOut);
                 #endregion
                 
                 #endregion
@@ -262,15 +262,15 @@ namespace Tausendblatt
                 await ImageLogo.FadeTo(1, 0);
                 DetailImagesIsVisible = false;
           
-                await ImageLogo.ScaleTo(1.5, animation, Easing.SpringIn);
+                await ImageLogo.ScaleTo(1.5, animation, Easing.Linear);
                 await Task.Delay((int)animation);
 
                 await Task.WhenAll(new Task[]
                     {
-                        DetailLabelsFadeTo(0, animation),
-                        ImageLogo.ScaleTo(0, animation),
-                        ImageLogo.RotateTo(3600, animation),
-                        ImageLogo.FadeTo(0, animation)
+                        DetailLabelsFadeTo(0, animation, Easing.Linear),
+                        ImageLogo.ScaleTo(0, animation, Easing.Linear),
+                        ImageLogo.RotateTo(3600, animation, Easing.Linear), 
+                        ImageLogo.FadeTo(0, animation, Easing.Linear)
                     });
 
                 ImageLogo.IsVisible = false;
