@@ -3,7 +3,7 @@
 Developed with Xamarin Studio and Xamarin.Forms on OS X.</br>
 Only tested with iOS because I have no Android license.
 
-## With images and Xamarin.Forms animations you can make a film.
+## With images and Xamarin.Forms animations you can make a video.
 
 A video of the animation can be found here https://github.com/EifelMono/Tausendblatt/blob/master/Video/AnimationLogo.mp4
 
